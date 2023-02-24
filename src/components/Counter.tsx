@@ -11,13 +11,13 @@ const Counter: React.FC<Props> = (props) => {
 
     return (
         <div >
-            <h1>
+            <h1 className="text-3xl font-bold text-red-500 underline text-center">
                 Counter {states.counter}
             </h1>
-            <button onClick={() => {
+            <button className='text-3xl font-bold text-red-500 underline text-center' onClick={() => {
                 controller.increase()
             }}>++</button>
-        </div>
+        </div >
     )
 
 }
